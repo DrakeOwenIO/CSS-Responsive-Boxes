@@ -1,3 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: papayawhip;
+  background-color: lightgray;
+}
+
+div {
+  background-color: darkgrey;
+  text-align: center;
+}
+
+.container {
+  padding: 5% 3%;
+}
+
+.a {
+
+}
+
+.b {
+  min-height: 50vh;
+
+}
+
+.c {
+  float: left;
+  width: 33%;
+}
+
+.d {
+  width: 33%;
+}
+
+.e {
+  width: 33%;
+}
+
+.f {
+
+}
+
+.c, .d, .e{
+  display: inline-block;
+}
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.f {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 576px) {
+  .bottom-container{
+    display: flex;
+  }
+
+  .f{
+    float: right;
+    flex-basis: 30%;
+    min-height: 100%;
+  }
+
+  .left-container {
+    flex-basis: 100%;
+    margin-right: 3%;
+  }
+
 }
